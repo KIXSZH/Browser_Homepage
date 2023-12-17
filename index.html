@@ -1,0 +1,89 @@
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Simple homepage for any browser, with customizable search engine."/>
+	<title>WELCOME KIXSZH⚡</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+
+</head>
+<body>
+
+	<div class="layout">
+
+		<!-- Begins the settings part -->
+		<div id="settings" onclick="showSettings(event)" title="Open the settings">
+			<div class="menuline"></div>
+			<div class="menuline"></div>
+			<div class="menuline"></div>
+		</div>
+		<div id="settings_open" onclick="showSettings(event)" title="Close the settings">
+			<div class="line1">
+			</div>
+			<div class="line2">
+			</div>
+		</div>
+		<div class="settings_menu">
+			<div class="settings_text">
+				<h1>Settings</h1>
+				<br>
+				<div class="settings_header">
+					Select engine
+				</div>
+
+				<select id="settings_engine" title="Choose the search engine">
+					
+					<option value="Google">Google</option>
+					<option value="DuckDuckGo">DuckDuckGo</option>
+					<option value="Ecosia">Ecosia</option>
+					<option value="Brave">Brave</option>
+					<option value="Bing">Bing</option>
+					<option value="Yahoo">Yahoo</option>
+				</select>
+				<br>
+				<br>
+				<button id="apply" onclick="applySettings()" title="Apply the new settings">
+					Apply
+				</button>
+				<br>
+				<div id="settings_applied">
+					Settings successfully applied
+				</div>
+			</div>
+			<br>
+		</div>
+		<!-- Ends the settings part -->
+
+		<!-- Begins the start page -->
+		<div class="mainscreen">
+			<noscript class="text headers">
+				<h1>This page requires JavaScript to work</h1>
+				<br>
+				<br>
+			</noscript>
+
+			<div id="MyClockDisplay" class="headers" onload="showTime()"></div>
+
+			<input id="searchbar" type="text" placeholder="Search with Google" title="Search the web" autofocus>
+
+			<div class="icons">
+				<a href="https://open.spotify.com/"><img width=30 height=30 src="assets/icons/spotify.svg" title="spotify"></a>
+				<a href="https://youtube.com"><img width=30 height=30 src="assets/icons/youtube.svg" title="YouTube"></a>
+				<a href="https://web.whatsapp.com"><img width=30 height=30 src="assets/icons/whatsapp.svg" title="whatsapp"></a>
+				<a href="https://web.telegram.org"><img width=30 height=30 src="assets/icons/telegram.svg" title="telegram"></a>
+				<a href="https://gmail.com/"><img width=30 height=30 src="assets/icons/mail.svg" title="gmail"></a>
+				<a href="https://udemy.com/"><img width=30 height=30 src="assets/icons/udemy.svg" title="udemy"></a>
+				<a href="https://linkedin.com/"><img width=30 height=30 src="assets/icons/linkedin.svg" title="linkedin"></a>
+				
+	       	</div>
+	       	<hr id="hrfocus">
+
+	       	<br>
+
+			
+		</div>
+
+	</div>
+    <script src="index.js"></script>
+</body>
+</html>
